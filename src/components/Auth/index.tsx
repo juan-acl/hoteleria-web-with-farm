@@ -1,3 +1,4 @@
+import { Loader } from "~components/Loader";
 import { currentUserSelector } from "~redux/selectors/auth.selector";
 import { useAppSelector } from "~redux/store";
 
@@ -7,6 +8,7 @@ export const Auth = () => {
     return (
         <div>
             <h1>Auth</h1>
+            <Loader />
         </div>
     );
 };
