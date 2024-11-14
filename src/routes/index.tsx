@@ -1,6 +1,8 @@
+import { Auth } from "~components/Auth";
+
 export const rootRouter = [
-	{
-		path: "/",
-		element: <h1>Home</h1>,
-	},
+    {
+        path: "/",
+        element: <Auth />,
+    },
 ];
