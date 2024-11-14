@@ -1,6 +1,6 @@
 export const rootRouter = [
-  {
-    path: "/",
-    element: <h1>Home</h1>,
-  },
+	{
+		path: "/",
+		element: <h1>Home</h1>,
+	},
 ];
