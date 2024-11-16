@@ -1,8 +1,53 @@
 .nav-bar {
+    background-color: rgba(26, 30, 67);
+    position: relative;
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.container__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    background-color: #333;
+    height: 70px;
+}
+
+.redirections__ ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.sign__up {
+    border: #fff solid 1px;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-align: center;
+    width: 100px;
+}
+
+.sign__in {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 7px;
+    text-align: center;
+    width: 100px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.logo__img {
+    height: 100%;
     color: #fff;
+    width: auto;
+}
+
+a {
+    cursor: pointer;
 }
