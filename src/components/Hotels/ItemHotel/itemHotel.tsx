@@ -6,11 +6,11 @@ export const ItemHotel = () => {
             <div className="card">
                 <div className="img"></div>
                 <div className="text">
-                    <p className="h3"> The Spectator Hotel</p>
+                    <h3>The Spectator Hotel</h3>
                     <p className="price">
-                        $20204 <small> / Nigth</small>{" "}
+                        $20204 <small> / Night</small>
                     </p>
-                    <p className="p"> 124 Stret, City, Country </p>
+                    <p>124 Street, City, Country</p>
                 </div>
             </div>
         </article>
