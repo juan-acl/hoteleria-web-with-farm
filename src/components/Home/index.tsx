@@ -1,4 +1,5 @@
 import { Hotel } from "~components/Hotels";
+import { SubMenu } from "~components/SubMenu";
 import "./home.css";
 
 export const Home = () => {
@@ -15,6 +16,9 @@ export const Home = () => {
                         </span>
                     </div>
                 </div>
+            </div>
+            <div style={{ display: "flex" }}>
+                <SubMenu />
             </div>
             <div className="container__resumn__hotels">
                 <h3 className="text__top__rated">Top Rated</h3>
