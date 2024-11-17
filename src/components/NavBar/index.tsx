@@ -26,7 +26,7 @@ export const NavBar = () => {
                         <li>
                             <a
                                 onClick={() =>
-                                    navigateGeneric(ROUTES_NAME.HOME)
+                                    navigateGeneric(ROUTES_NAME.HOME, false)
                                 }
                             >
                                 HOME
@@ -35,7 +35,7 @@ export const NavBar = () => {
                         <li>
                             <a
                                 onClick={() =>
-                                    navigateGeneric(ROUTES_NAME.SERVICES)
+                                    navigateGeneric(ROUTES_NAME.SERVICES, false)
                                 }
                             >
                                 SERVICES
@@ -44,7 +44,7 @@ export const NavBar = () => {
                         <li>
                             <a
                                 onClick={() =>
-                                    navigateGeneric(ROUTES_NAME.BOOKING)
+                                    navigateGeneric(ROUTES_NAME.BOOKING, false)
                                 }
                             >
                                 BOOKING
@@ -53,7 +53,7 @@ export const NavBar = () => {
                         <li>
                             <a
                                 onClick={() =>
-                                    navigateGeneric(ROUTES_NAME.EXPLORE)
+                                    navigateGeneric(ROUTES_NAME.EXPLORE, false)
                                 }
                             >
                                 EXPLORE
