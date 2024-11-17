@@ -23,6 +23,7 @@
     "@farmfe/plugin-react": "^1.2.0",
     "@types/react": "18",
     "@types/react-dom": "18",
+    "@types/react-helmet": "^6.1.11",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
     "@typescript-eslint/parser": "^8.14.0",
     "core-js": "^3.36.1",

@@ -3,12 +3,14 @@ import "./home.css";
 
 export const Home = () => {
     return (
-        <div>
+        <>
             <div className="container__home">
                 <div className="img__home">
                     <div className="resume">
-                        <h4>Chase elegant. Reserve your dream staty now.</h4>
-                        <span>
+                        <h4 className="h4__title">
+                            Chase elegant. Reserve your dream staty now.
+                        </h4>
+                        <span className="span__description">
                             Discover the finest hotels from all over the world.{" "}
                         </span>
                     </div>
@@ -28,6 +30,6 @@ export const Home = () => {
                     <Hotel />
                 </div>
             </div>
-        </div>
+        </>
     );
 };

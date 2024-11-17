@@ -1,4 +1,47 @@
 footer {
-    height: 100px;
+    height: 100%;
+    width: 100%;
     background-color: rgba(26, 30, 67);
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.principal__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 50px;
+}
+
+.title__footer__info {
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.description__footer__info {
+    margin-bottom: 1rem;
+    color: white;
+    font-weight: normal;
+}
+
+.line__footer {
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
