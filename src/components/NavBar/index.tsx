@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { navigateTo } from "~routes/navigation";
 import { useNavigate } from "react-router-dom";
 import { ROUTES_NAME } from "~constants/nameRoutes";
@@ -6,12 +7,13 @@ import "./navBar.css";
 
 export const NavBar = () => {
     const navigate = useNavigate();
+    const [menuOpen, setMenuOpen] = useState(false);
 
-    const navigateGeneric = (path: string, replace: boolean = true) => {
-        navigateTo(path, navigate, {
-            replace,
-        });
+    const navigateGeneric = (path: string, replace = true) => {
+        navigateTo(path, navigate, { replace });
     };
+
+    const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
         <nav className="nav-bar">
@@ -21,7 +23,10 @@ export const NavBar = () => {
                         <img src={IMG_LOGO} alt="logo" className="logo__img" />
                     </a>
                 </div>
-                <div className="redirections__">
+                <button className="hamburger" onClick={toggleMenu}>
+                    &#9776;
+                </button>
+                <div className={`redirections__ ${menuOpen ? "open" : ""}`}>
                     <ul>
                         <li>
                             <a
