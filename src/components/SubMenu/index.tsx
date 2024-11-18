@@ -7,7 +7,11 @@ import { navigateTo } from "~routes/navigation";
 import { useNavigate } from "react-router-dom";
 import "./subMenu.css";
 
-export const SubMenu = () => {
+interface SubMenuProps {
+    title: string;
+}
+
+export const SubMenu = ({ title }: SubMenuProps) => {
     const navigate = useNavigate();
 
     const navigateToBooking = () => {
@@ -127,7 +131,7 @@ export const SubMenu = () => {
                 </div>
                 <div className="sub__menu__item">
                     <button className="book__now" onClick={navigateToBooking}>
-                        Book Now
+                        {title}
                     </button>
                 </div>
             </div>

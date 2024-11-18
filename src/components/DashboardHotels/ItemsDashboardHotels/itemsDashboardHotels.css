@@ -1,0 +1,67 @@
+.container__item__card__hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    border: solid 1px #e0e0e0;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    gap: 25px;
+}
+
+.image__card__hotel__item { 
+    background-image: url("../../../assets/img/home.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.description__hotel__card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container__details__hotel {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.location__container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.button__select__hotel {
+    background-color: #23284C;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    width: 30%;
+    font-size: 15px;
+}
+
+.container__icons__amenities { 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.price__for__night {
+    color: #FEBB02;
+}
+
+.pricing {
+    text-align: end;
+}

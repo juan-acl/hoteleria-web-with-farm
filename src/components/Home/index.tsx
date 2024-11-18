@@ -18,7 +18,7 @@ export const Home = () => {
                 </div>
             </div>
             <div style={{ display: "flex" }}>
-                <SubMenu />
+                <SubMenu title="Book Now" />
             </div>
             <div className="container__resumn__hotels">
                 <h3 className="text__top__rated">Top Rated</h3>

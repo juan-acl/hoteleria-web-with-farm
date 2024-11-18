@@ -5,7 +5,7 @@ export const Filtering = () => {
     return (
         <div className="container__filtering">
             <FilterByName />
-            <h5 className="text__filter__by__result">Filter result</h5>
+            <h5 className="text__filter__by__result">Filter results</h5>
             <div className="sub__conteiner__filter__by__price__and__stars">
                 <div className="item__filtering">
                     <h5 className="text__price__range">Price Range</h5>

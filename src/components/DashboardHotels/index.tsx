@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { SubMenu } from "~components/SubMenu";
-import "./dashboardHotels.css";
 import { ListDashboardHotels } from "./ListDashboardHotels/listDashboardHotels";
 import { Filtering } from "./Filtering/filtering";
+import "./dashboardHotels.css";
 
 export const DashboardHotels = () => {
     useEffect(() => {
@@ -14,14 +14,14 @@ export const DashboardHotels = () => {
     }, []);
 
     return (
-        <>
+        <div>
             <div style={{ display: "flex" }}>
-                <SubMenu />
+                <SubMenu title={"Search Again"} />
             </div>
             <div className="conteiner__dashboard__hotels">
                 <Filtering />
                 <ListDashboardHotels />
             </div>
-        </>
+        </div>
     );
 };
