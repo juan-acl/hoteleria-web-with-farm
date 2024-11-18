@@ -16,7 +16,7 @@ export const NavBar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <nav className="nav-bar">
+        <nav className="nav-bar" id="nav__bar__">
             <div className="container__nav">
                 <div className="logo">
                     <a onClick={() => navigateGeneric(ROUTES_NAME.HOME)}>

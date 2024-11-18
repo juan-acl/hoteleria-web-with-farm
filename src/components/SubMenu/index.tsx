@@ -2,10 +2,18 @@ import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import PersonIcon from "@mui/icons-material/Person";
 import LocalMallIcon from "@mui/icons-material/LocalMall";
 import { Select } from "antd";
-import "./subMenu.css";
 import { Icon } from "@mui/material";
+import { navigateTo } from "~routes/navigation";
+import { useNavigate } from "react-router-dom";
+import "./subMenu.css";
 
 export const SubMenu = () => {
+    const navigate = useNavigate();
+
+    const navigateToBooking = () => {
+        navigateTo("/booking", navigate);
+    };
+
     return (
         <section className="section">
             <div className="sub__container__items">
@@ -118,7 +126,9 @@ export const SubMenu = () => {
                     </div>
                 </div>
                 <div className="sub__menu__item">
-                    <button className="book__now">Book Now</button>
+                    <button className="book__now" onClick={navigateToBooking}>
+                        Book Now
+                    </button>
                 </div>
             </div>
         </section>

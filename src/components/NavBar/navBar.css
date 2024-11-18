@@ -2,7 +2,7 @@
     background-color: rgba(26, 30, 67);
     position: relative;
     color: #fff;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(1px);
 }
 
 .container__nav {
@@ -11,9 +11,9 @@
     align-items: center;
     padding: 0 100px;
     height: 70px;
+    backdrop-filter: blur(50px);
 }
 
-/* Estilos de redirecciones (menu de navegación) */
 .redirections__ ul {
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,6 @@
     gap: 20px;
 }
 
-/* Botones Sign Up e Sign In */
 .sign__up {
     border: #fff solid 1px;
     padding: 5px 10px;
@@ -54,7 +53,6 @@ a {
     cursor: pointer;
 }
 
-/* Estilos para el ícono de hamburguesa */
 .hamburger {
     display: none;
     font-size: 24px;

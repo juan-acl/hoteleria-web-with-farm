@@ -1,0 +1,15 @@
+.conteiner__dashboard__hotels {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.result__filtering { 
+    color: #23284C;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 230px;
+}

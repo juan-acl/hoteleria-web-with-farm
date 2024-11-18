@@ -1,0 +1,38 @@
+.container__filtering {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.item__filtering { 
+    background-color: #23284C;
+    height: 40px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.text__filter__by__result {
+    color: #23284C;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.text__price__range{ 
+    color: white;
+    text-align: start;
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.sub__conteiner__filter__by__price__and__stars {
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+
+.items__star__raiting {
+    margin: 10px 10px ;
+}
