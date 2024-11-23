@@ -4,22 +4,21 @@
     gap: 20px;
 }
 
-.item__filtering { 
-    background-color: #23284C;
+.item__filtering {
+    background-color: #23284c;
     height: 40px;
     width: 300px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-
 }
 
 .text__filter__by__result {
-    color: #23284C;
+    color: #23284c;
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.text__price__range{ 
+.text__price__range {
     color: white;
     text-align: start;
     margin-left: 10px;
@@ -34,5 +33,10 @@
 }
 
 .items__star__raiting {
-    margin: 10px 10px ;
+    margin: 0px 0px;
+}
+
+.items__star__raiting__ {
+    display: flex;
+    justify-content: space-between;
 }
