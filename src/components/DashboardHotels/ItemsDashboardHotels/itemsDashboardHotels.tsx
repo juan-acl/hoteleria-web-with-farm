@@ -1,10 +1,22 @@
+import "./itemsDashboardHotels.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WifiIcon from "@mui/icons-material/Wifi";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
 import PoolIcon from "@mui/icons-material/Pool";
-import "./itemsDashboardHotels.css";
+import { useNavigate } from "react-router-dom";
+import { navigateTo } from "~routes/navigation";
+import { ROUTES_NAME } from "~constants/nameRoutes";
+import { v4 } from "uuid";
 
 export const ItemsDashboardHotels = () => {
+    const navigate = useNavigate();
+    function navigateDetailHotel() {
+        const id = v4();
+        navigateTo(ROUTES_NAME.BOOKING + `/${id}`, navigate, {
+            replace: false,
+        });
+    }
+
     return (
         <article className="container__item__card__hotel">
             <div className="image__card__hotel__item"></div>
@@ -20,7 +32,12 @@ export const ItemsDashboardHotels = () => {
                     <small className="location__text">Location</small>
                 </div>
                 <div>
-                    <button className="button__select__hotel">Select</button>
+                    <button
+                        onClick={navigateDetailHotel}
+                        className="button__select__hotel"
+                    >
+                        Select
+                    </button>
                 </div>
             </div>
             <div className="container__details__hotel">

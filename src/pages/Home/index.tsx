@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 import { Home } from "~components/Home";
 
-export const HomePage = () => {
+export const HomePage = (): JSX.Element => {
     return (
         <>
             <Helmet>

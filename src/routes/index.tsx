@@ -3,6 +3,7 @@ import { Auth } from "~components/Auth";
 import { DashboardHotels } from "~components/DashboardHotels";
 import { Layout } from "~components/Layout";
 import { HomePage } from "~pages/Home";
+import { HotelDetailPage } from "~pages/Hotel/detailHotelPage";
 
 export const rootRouter = [
     {
@@ -25,7 +26,10 @@ export const rootRouter = [
                 path: "/booking",
                 element: <DashboardHotels />,
             },
-            ,
+            {
+                path: "/booking/:id",
+                element: <HotelDetailPage />,
+            },
         ],
     },
 ];

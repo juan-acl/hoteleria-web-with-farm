@@ -1,0 +1,24 @@
+.contianer__scroll_buttons { 
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fff;
+    gap: 1rem;
+}
+
+.item__scroll__button button { 
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+.line__active_section { 
+    width: 100%;
+    height: 1rem;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s;
+}
