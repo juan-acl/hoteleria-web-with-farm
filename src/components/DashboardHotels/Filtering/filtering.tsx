@@ -53,7 +53,7 @@ export const Filtering = () => {
                         >
                             <div>
                                 <input type="checkbox" name="star" id="star3" />
-                                <label htmlFor="star3">3 Star</label>
+                                <label htmlFor="star3">$ 500 - $ 1000</label>
                             </div>
                             <div>
                                 <label>22</label>
@@ -70,10 +70,27 @@ export const Filtering = () => {
                         >
                             <div>
                                 <input type="checkbox" name="star" id="star4" />
-                                <label htmlFor="star4">4 Star</label>
+                                <label htmlFor="star4">$ 1000 - $ 2000</label>
                             </div>
                             <div>
                                 <label>45</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="item__star__raiting">
+                        <div
+                            style={{
+                                display: "flex",
+                                justifyContent: "space-between",
+                                padding: "5px",
+                            }}
+                        >
+                            <div>
+                                <input type="checkbox" name="star" id="star4" />
+                                <label htmlFor="star4">$ 2000 - $ 5000</label>
+                            </div>
+                            <div>
+                                <label>5</label>
                             </div>
                         </div>
                     </div>
